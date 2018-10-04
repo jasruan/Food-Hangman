@@ -1,0 +1,135 @@
+body{
+    text-align: center;
+    background-color:#f0f7ee;
+}
+
+#gameArea, #letterArea , #diffArea{
+    font-family: 'Hind Madurai', sans-serif;
+    margin:0 auto;
+}
+#gameArea{
+    display:none;
+}
+h1{
+    font-size:3rem;
+    margin-top:3rem;
+    font-family:'Shadows Into Light', cursive;
+}
+.alphabetLetters{
+    display:inline-block; 
+    font-size:1.5rem; 
+    background-color:#5d737e; 
+    color:#f0f7ee;
+    padding:10px;
+    margin:5px;
+    border-radius:10px;
+    cursor: pointer;
+}
+.alphabetLetters:hover{
+    background-color:#aad4e9;
+
+}
+.usedLetters{
+color:#32292f;
+display: inline-block;
+font-size:1.2rem;
+margin:1px;
+padding:6px;
+border-radius: 10px;
+background-color:#cb5f5f;
+color:whitesmoke;
+}
+.diffSel{
+    display: inline-block;
+    font-size:1.5rem;
+    margin:5px;
+    padding:10px;
+    border-radius: 10px;
+    background-color: #32292f;
+    color:#aad4e9;
+    cursor: pointer;
+}
+#leftSide{
+    float:left;
+    width:20%;
+    margin-left:4rem;
+}
+#leftSide > h3{
+    color:#cb5f5f;
+}
+.letters{
+    font-size:2.0rem;
+    display: inline-block;
+}
+#lifeCountBox{
+text-align: left;
+margin-left:7rem;
+}
+#lifeCountBox > span{
+    font-size:1.3rem;
+    margin:5px;
+}
+#gameOver{
+    display: none;
+}
+
+.winMessage{
+    font-size:2.0rem;
+    -webkit-animation: rainbow 3s infinite; 
+  
+    /* Internet Explorer */
+    -ms-animation: rainbow 3s infinite;
+    
+    /* Standar Syntax */
+    animation: rainbow 3s infinite; 
+}
+.gameOverOptions{
+    font-size:1.5rem;
+    margin:5px;
+    padding:8px;
+    border-radius: 10px;
+    background-color: #32292f;
+    color:#aad4e9;
+    display: inline-block;
+    cursor: pointer;
+    
+}
+#gameOver > h3{
+    font-size: 1.2rem;
+}
+@-webkit-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+      20%{color: red;}
+      40%{color: yellow;}
+      60%{color: green;}
+      100%{color: blue;}
+      100%{color: orange;}	
+  }
+  /* Internet Explorer */
+  @-ms-keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+      20%{color: red;}
+      40%{color: yellow;}
+      60%{color: green;}
+      100%{color: blue;}
+      100%{color: orange;}	
+  }
+  
+  /* Standar Syntax */
+  @keyframes rainbow{
+    0%{color: orange;}	
+    10%{color: purple;}	
+      20%{color: red;}
+      40%{color: yellow;}
+      60%{color: green;}
+      100%{color: blue;}
+      100%{color: orange;}
+  }
+
+@media screen and (max-width: 768px){
+    .alphabetLetters{
+        font-size:1.2rem;
+    }
+}

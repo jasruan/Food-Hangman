@@ -27,7 +27,6 @@
             node.addEventListener("click", selectLetter);
             letterArea.appendChild(node);
         }
-        console.log(currentSolution);
     }; //end of printalpha function
         function selectLetter(){
         let alpha = [...alphabet];
@@ -110,7 +109,6 @@
                     $('.gameOverOptions').hide().fadeOut(1000);
                     $('#gameOver').empty().fadeOut(1000);
                     printDifficult();
-                    console.log(this.innerHTML);
                 }
                 else if(this.innerHTML === "No"){
                     $('.gameOverOptions').hide().fadeOut(1000);
@@ -131,12 +129,15 @@
     };
     let checkDiff = (diff) =>{
         if(diff == "Easy"){
+            gameLives = 9;
             return wordBankEasy;
         }
         else if (diff == "Intermediate"){
+            gameLives = 7;
             return wordBankInter;
         }
         else if(diff == "Hard"){
+            gameLives = 6;
             return wordBankHard;
         }
     };
@@ -160,7 +161,7 @@
              difficultArea.appendChild(diffSelect);
              diffSelect.onclick = function(e){
                  difficultArea.style.display = 'none';
-                 gameLives = 9;    
+                 checkDiff(this.innerHTML);
                  play(this.innerHTML);                         
              };
          }

@@ -1,32 +1,41 @@
 body{
     text-align: center;
-    background-color:#f0f7ee;
-}
+    background-image: url('media/carrots-food-fresh.png');
+    background-size:cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 
-#gameArea, #letterArea , #diffArea{
+}
+#gameArea, #letterArea , #diffArea, body{
     font-family: 'Hind Madurai', sans-serif;
     margin:0 auto;
 }
 #gameArea{
     display:none;
 }
+h4{
+    font-size:1.5rem;
+}
 h1{
     font-size:3rem;
     margin-top:3rem;
     font-family:'Shadows Into Light', cursive;
+    color:lightgoldenrodyellow;
+    text-shadow: 3px 3px 2px chocolate;
 }
 .alphabetLetters{
     display:inline-block; 
     font-size:1.5rem; 
-    background-color:#5d737e; 
-    color:#f0f7ee;
+    background-color:#77514c; 
+    color:lightgoldenrodyellow;
     padding:10px;
     margin:5px;
     border-radius:10px;
     cursor: pointer;
+    box-shadow:1px 2px 1px #c24d3e;
 }
 .alphabetLetters:hover{
-    background-color:#aad4e9;
+    background-color:#c24d3e;
 
 }
 .usedLetters{
@@ -46,8 +55,13 @@ color:whitesmoke;
     padding:10px;
     border-radius: 10px;
     background-color: #32292f;
-    color:#aad4e9;
+    color:lightgoldenrodyellow;
     cursor: pointer;
+    box-shadow:1px 2px 1px #c24d3e;
+
+}
+.diffSel:hover{
+    background-color: #c24d3e;
 }
 #leftSide{
     float:left;
@@ -55,7 +69,8 @@ color:whitesmoke;
     margin-left:4rem;
 }
 #leftSide > h3{
-    color:#cb5f5f;
+    color:lightgoldenrodyellow;
+    text-shadow:2px 2px 1px #cb5f5f;
 }
 .letters{
     font-size:2.0rem;
@@ -88,11 +103,14 @@ margin-left:7rem;
     margin:5px;
     padding:8px;
     border-radius: 10px;
-    background-color: #32292f;
-    color:#aad4e9;
+    background-color: chocolate;
+    color:lightgoldenrodyellow;
     display: inline-block;
     cursor: pointer;
-    
+    box-shadow:1px 2px 1px #c24d3e;
+}
+.gameOverOptions:hover{
+    background-color:#77514c;
 }
 #gameOver > h3{
     font-size: 1.2rem;

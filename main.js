@@ -3,9 +3,9 @@
 
     let alphabet = 'abcdefghijklmnopqrstuvwxyz'.split('');
     const diff = ["Easy", "Intermediate", "Hard"];
-    const wordBankEasy = ["chicken","lemon","beef","lime","juice","eggs","noodles"];
+    const wordBankEasy = ["chicken","lemon","beef","lime","juice","eggs","noodles","curry"];
     const wordBankInter = ["scampi", "pancakes","biscuits","ravioli","lunchables"];
-    const wordBankHard =["guacamole","enchilladas","sandwich"];
+    const wordBankHard =["guacamole","enchilladas","sandwich","potatoes","tiramisu"];
     let letterArea = document.getElementById("letterArea");
     let usedLetterArea = document.getElementById("usedLetterBox");
     let difficultArea = document.getElementById("diffArea");

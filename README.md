@@ -3,4 +3,4 @@ A hangman game made for fun! Uses a mix of javascript and jquery.
 
 A experimental food hangman game. 
 Clone it and test it out! 
-Or play it on:
+Or play it on:https://jasruan.github.io/Food-Hangman/
